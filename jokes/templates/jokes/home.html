@@ -1,0 +1,28 @@
+{% extends "blog/base.html" %}
+
+<head>
+    <title>Blog Page</title>
+
+</head>
+
+
+<body>
+    {% block content %}
+        <div class="row">
+            <div class="col-15">
+                <div>
+
+                    {% for joke in jokes %}
+                        <p>{{ joke }}</p>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+</body>
+
+
+
+
+
